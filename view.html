@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>sample_en</title>
+<style>
+body
+{
+    background: "#E5E5E5";
+	font-family: "verdana", "arial", "helvetica";
+	font-size: "10pt";
+}
+td
+{
+	font-family: "verdana", "arial", "helvetica";
+	font-size: "9pt";
+}
+td.local
+{
+    background: #336699;
+	background-color: #003366;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border: 1px double #009acd;
+	margin: 1px;
+	padding: 1px;
+	color: #99ff99;
+	font-size: "10pt";
+	text-shadow: 0px 0px 20px yellow, 0px 0px 10px orange, red 5px -5px;
+}
+.bt
+{
+	font-size: 9pt;
+	background-color: #eeeeee;
+	font-family: "verdana", "arial", "helvetica";
+}
+.button {
+	BORDER-RIGHT: #a2a2a2 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-SIZE: 12px; BACKGROUND: #cccccc; BORDER-LEFT: #ffffff 1px solid; COLOR: #333333; PADDING-TOP: 3px; BORDER-BOTTOM: #a2a2a2 1px solid; HEIGHT: 21px; cursor: hand;
+}
+.button1 {
+	BORDER-RIGHT: #af6700 1px solid; BORDER-TOP: #ffd16e 1px solid; FONT-SIZE: 12px; BACKGROUND: #ff9600; BORDER-LEFT: #ffd16e 1px solid; COLOR: #964700; PADDING-TOP: 3px; BORDER-BOTTOM: #af6700 1px solid; HEIGHT: 21px; cursor: hand;
+}
+.button2 {
+	BORDER-RIGHT: #ae0c0c 1px solid; BORDER-TOP: #fc7070 1px solid; FONT-SIZE: 12px; BACKGROUND: #ee3e3e; BORDER-LEFT: #fc7070 1px solid; COLOR: #ffefef; PADDING-TOP: 2px; BORDER-BOTTOM: #ae0c0c 1px solid; HEIGHT: 21px; cursor: hand;
+}
+</style>
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="loadview2()">
+<div align="center"> 
+  <table width="100%">
+    <tr> 
+      <td><div align="center"><table border="1">
+          <tr>
+            <td>
+           <object name="Camera1" ID="Camera1" width="640" height="480" 
+				CLASSID="CLSID:0C615F36-0C1C-497B-B9E4-833B0D7AA8CA" 
+				CODEBASE="/NetViewX.cab">
+                </object>
+		
+			</td>
+            <td>
+       		<object name="Camera2" ID="Camera2" width="352" height="288" 
+				CLASSID="CLSID:0C615F36-0C1C-497B-B9E4-833B0D7AA8CA" 
+				CODEBASE="/NetViewX.cab">
+            </object>
+			</td>
+          </tr>
+          <tr>
+              <td> <object name="Camera3" id="Camera3" width="352" height="288" 
+				classid="CLSID:0C615F36-0C1C-497B-B9E4-833B0D7AA8CA" 
+				codebase="/NetViewX.cab">
+                </object></td>
+            <td>
+			<object name="Camera4" ID="Camera4" width="352" height="288" 
+				CLASSID="CLSID:0C615F36-0C1C-497B-B9E4-833B0D7AA8CA" 
+				CODEBASE="/NetViewX.cab">
+                </object>
+			</td>
+          </tr>
+        </table>
+        </div></td>
+    </tr>
+    
+  </table>
+</div>
+</body>
+<script language="javascript">
+
+
+function loadview2()
+{
+	
+	var cmrai = new Array(Camera1, Camera2, Camera3, Camera4);
+    	var ip = "10.13.201.3"; //ip adress
+		var port = "3000"; //port
+		var username = "888888"; //user
+		var password = "888888"; //password
+   
+		cmrai[0].url         = ip;
+		cmrai[0].wServerPort = port;
+		cmrai[0].channel     = "0"; 
+		cmrai[0].username    = username;
+		cmrai[0].password    = password;
+		cmrai[0].trantype   = 3;//3 is TCP
+		cmrai[0].SetLanguage(0);
+		cmrai[0].PostProMethon(0);
+		cmrai[0].StartView();
+		//------camera 1
+		//cmrai[1].url         = ip;
+		//cmrai[1].wServerPort = port;
+		//cmrai[1].channel     = "1"; 
+		//cmrai[1].username    = username;
+		//cmrai[1].password    = password;
+		//cmrai[1].trantype   = 3;//3 is TCP
+		//cmrai[1].SetLanguage(0);
+		//cmrai[1].PostProMethon(0);
+		//cmrai[1].StartView();
+		//------camera 2
+		//cmrai[2].url         = ip;
+		//cmrai[2].wServerPort = port;
+		//cmrai[2].channel     = "2"; 
+		//cmrai[2].username    = username;
+		//cmrai[2].password    = password;
+		//cmrai[2].trantype   = 3;//3 is TCP
+		//cmrai[2].SetLanguage(0);
+		//cmrai[2].PostProMethon(0);
+		//cmrai[2].StartView();
+		
+		
+		
+}
+</script>
+
+</html>
