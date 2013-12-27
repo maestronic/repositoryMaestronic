@@ -1,4 +1,4 @@
-dnl Check for socklen_t: historically on BSD it is an int, and in
+cssdnl Check for socklen_t: historically on BSD it is an int, and in
 dnl POSIX 1g it is a type of its own, but some platforms use different
 dnl types for the argument to getsockopt, getpeername, etc.  So we
 dnl have to test to find something that will work.
